@@ -24,7 +24,7 @@
 	</header>
 	<main class="main">
 		<div class="container">
-					<h1 class="h1-title">Игроки</h1>
+			<h1 class="h1-title">Игроки</h1>
 			<div id="players_card_wrapper"  class="cart-player__wrapper row">
 				<button id="add-button" class="cart-add">
 					<span class="plus">
@@ -32,6 +32,1089 @@
 						<span class="plus__line"></span>
 					</span>
 				</button>
+			</div>
+			<div class="search">
+				<h2 class="h1-title">Поиск по карточкам</h2>
+				<div class="search__button">
+					<span><button class="btn all not-circle">Все</button></span>
+					<span><button class="btn brown">Коричневые</button></span>
+					<span><button class="btn ligth-blue">Голубые</button></span>
+					<span><button class="btn pink">Розовые</button></span>
+					<span><button class="btn orange">Оранжевые</button></span>
+					<span><button class="btn red">Красные</button></span>
+					<span><button class="btn yellow">Желтые</button></span>
+					<span><button class="btn green">Зеленые</button></span>
+					<span><button class="btn dark-blue">Синие</button></span>
+					<span><button class="btn train not-circle">Железная дорога</button></span>
+				</div>
+				<div class="grid">
+					<div class="grid__card brown">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Житная Ул.</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$2</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$10</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$30</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$90</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$160</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$250</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$30</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $50 <br>
+									Стоимость отелей: цена за один
+									отель в размере $50 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card brown">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Нагатинская Ул.</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$4</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$20</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$60</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$180</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$320</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$450</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$30</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $50 <br>
+									Стоимость отелей: цена за один
+									отель в размере $50 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card train">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<img src="img/train.png" alt="train">
+								<div class="name">Рижская железная дорога</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата игроку владеющему: <span>$25</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">Двумя транспортными объектами</span>
+										<span class="right">$50</span>
+									</li>
+									<li>
+										<span class="left">Тремя транспортными объектами</span>
+										<span class="right">$100</span>
+									</li>
+									<li>
+										<span class="left">четырьмя транспортными объектами</span>
+										<span class="right">$200</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$100</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card light-blue">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Варшавское<br>шоссе</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$6</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$30</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$90</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$270</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$400</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$550</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$50</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $50 <br>
+									Стоимость отелей: цена за один
+									отель в размере $50 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card light-blue">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул. огарева</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$6</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$30</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$90</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$270</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$400</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$550</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$50</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $50 <br>
+									Стоимость отелей: цена за один
+									отель в размере $50 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card light-blue">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Первая<br>парковая ул.</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$8</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$40</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$100</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$300</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$450</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$600</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$60</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $50 <br>
+									Стоимость отелей: цена за один
+									отель в размере $50 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card pink">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул. Сретенка</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$10</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$50</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$150</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$450</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$625</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$750</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$70</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $100 <br>
+									Стоимость отелей: цена за один
+									отель в размере $100 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card pink">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул. Полянка</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$10</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$50</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$150</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$450</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$625</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$750</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$70</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $100 <br>
+									Стоимость отелей: цена за один
+									отель в размере $100 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card pink">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ростовская<br>Наб.</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$12</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$60</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$180</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$500</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$700</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$900</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$80</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $100 <br>
+									Стоимость отелей: цена за один
+									отель в размере $100 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card train">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<img src="img/train.png" alt="train">
+								<div class="name">Курская железная дорога</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата игроку владеющему: <span>$25</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">Двумя транспортными объектами</span>
+										<span class="right">$50</span>
+									</li>
+									<li>
+										<span class="left">Тремя транспортными объектами</span>
+										<span class="right">$100</span>
+									</li>
+									<li>
+										<span class="left">четырьмя транспортными объектами</span>
+										<span class="right">$200</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$100</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card orange">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Рязанский проспект</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$14</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$70</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$200</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$550</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$750</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$950</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$90</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $100 <br>
+									Стоимость отелей: цена за один
+									отель в размере $100 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card orange">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул. Вавилова</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$14</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$70</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$200</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$550</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$750</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$950</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$90</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $100 <br>
+									Стоимость отелей: цена за один
+									отель в размере $100 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card orange">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Рублевское<br>шоссе</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$16</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$80</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$220</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$600</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$800</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1000</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$100</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $100 <br>
+									Стоимость отелей: цена за один
+									отель в размере $100 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card train">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<img src="img/train.png" alt="train">
+								<div class="name">Казанская железная дорога</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата игроку владеющему: <span>$25</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">Двумя транспортными объектами</span>
+										<span class="right">$50</span>
+									</li>
+									<li>
+										<span class="left">Тремя транспортными объектами</span>
+										<span class="right">$100</span>
+									</li>
+									<li>
+										<span class="left">четырьмя транспортными объектами</span>
+										<span class="right">$200</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$100</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card red">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Пушкинская ул.</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$18</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$90</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$250</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$700</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$875</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1050</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$110</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $150 <br>
+									Стоимость отелей: цена за один
+									отель в размере $150 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card red">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">ул. Тверская</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$18</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$90</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$250</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$700</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$875</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1050</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$110</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $150 <br>
+									Стоимость отелей: цена за один
+									отель в размере $150 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card red">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Площадь маяковского</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$20</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$100</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$300</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$750</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$925</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1100</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$120</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $150 <br>
+									Стоимость отелей: цена за один
+									отель в размере $150 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card yellow">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул.<br>Грузинский вал</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$22</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$110</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$330</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$800</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$975</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1150</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$130</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $150 <br>
+									Стоимость отелей: цена за один
+									отель в размере $150 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card yellow">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул.<br>Чайковского</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$22</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$110</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$330</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$800</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$975</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1150</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$130</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $150 <br>
+									Стоимость отелей: цена за один
+									отель в размере $150 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card yellow">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Смоленская площадь</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$24</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$120</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$360</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$850</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$1025</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1200</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$140</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $150 <br>
+									Стоимость отелей: цена за один
+									отель в размере $150 вместе
+									с 4 домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card green">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул. Щусева</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$26</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$130</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$390</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$900</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$1100</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1275</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$150</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $200 <br>
+									Стоимость отелей: цена за один
+									отель в размере $200 вместе
+									с домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card green">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Гоголевский<br>бульвар</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$26</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$130</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$390</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$900</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$1100</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1275</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$150</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $200 <br>
+									Стоимость отелей: цена за один
+									отель в размере $200 вместе
+									с домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card green">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Кутузовский проспект</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$28</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$150</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$450</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$1000</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$1200</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1400</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$160</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $200 <br>
+									Стоимость отелей: цена за один
+									отель в размере $200 вместе
+									с домами
+								</div>
+								<p class="small_info">
+									Если игрок владеет всеми участками любой цветовой группы, арендная плата за незастроенные участки данной группы удваивается
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card train">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<img src="img/train.png" alt="train">
+								<div class="name">Ленинградская железная дорога</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата игроку владеющему: <span>$25</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">Двумя транспортными объектами</span>
+										<span class="right">$50</span>
+									</li>
+									<li>
+										<span class="left">Тремя транспортными объектами</span>
+										<span class="right">$100</span>
+									</li>
+									<li>
+										<span class="left">четырьмя транспортными объектами</span>
+										<span class="right">$200</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$100</span></div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card dark-blue">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул.Малая бронная</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$35</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$175</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$500</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$1100</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$1300</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$1500</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$175</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $200 <br>
+									Стоимость отелей: цена за один
+									отель в размере $200 вместе
+									с домами
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="grid__card dark-blue">
+						<div class="grid__card__wrapper">
+							<div class="grid__card__header">
+								<div class="subheader">Карточка собственника</div>
+								<div class="name">Ул. Арбата</div>
+							</div>
+							<div class="grid__card__info">
+								<div class="order">Арендная плата за участок: <span>$50</span></div>
+								<ul class="home">
+									<li>
+										<span class="left">С одним домом</span>
+										<span class="right">$200</span>
+									</li>
+									<li>
+										<span class="left">С двумя домами</span>
+										<span class="right">$600</span>
+									</li>
+									<li>
+										<span class="left">С тремя домами</span>
+										<span class="right">$1400</span>
+									</li>
+									<li>
+										<span class="left">С четырьмя домами</span>
+										<span class="right">$1700</span>
+									</li>
+									<li>
+										<span class="left">С одним ОТЕЛЕМ</span>
+										<span class="right">$2000</span>
+									</li>
+								</ul>
+								<div class="deposit">Залоговая стоимость <span>$200</span></div>
+								<div class="cost">
+									Стоимость каждого дома составляет
+									<br>составляет $200 <br>
+									Стоимость отелей: цена за один
+									отель в размере $200 вместе
+									с домами
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -61,6 +1144,23 @@
 				</div>
 				<button class="custom-modal__window__false btn active">Нет</button>
 				<button class="custom-modal__window__true btn active">Да</button>
+			</div>
+		</div>
+	</div>
+	<div id="myCardModal" class="custom-cardModal">
+		<div class="custom-cardModal__window">
+			<div class="custom-cardModal__window__wrapper">
+				<div class="my-custom" id="select-4"></div>
+			  <div class="line">
+					<button id='button-buy' class="btn">Купить карту</button> 
+				</div>
+				<div class="line line-select">
+					<div class="my-select" id="select-3"></div>
+					<button id='button-rent' class="btn">Заплатить ренту</button>
+				</div>
+				<div class="line">
+					<button id='button-deposit' class="btn">Заложить карту</button>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -227,6 +227,13 @@ window.confirm = function (message) {
     document.getElementById('myconfrim').dispatchEvent(new CustomEvent("close-confrim"))
     document.querySelector('.custom-confirm').classList.remove('active');
   }
+
+  document.querySelector('.custom-confirm').onclick = function () {
+    if(event.target.classList.contains('custom-confirm')) {
+      document.getElementById('myconfrim').dispatchEvent(new CustomEvent("close-confrim"))
+      event.target.classList.remove('active')
+    }
+  }
   
   return new Promise(function (resolve, reject) {
     document.getElementById('myconfrim').addEventListener('close-confrim', function () {
@@ -341,6 +348,15 @@ window.modalWindow = function (option) {
     if(select) select.destroy()
     if(select1) select1.destroy()
   }
+
+  modal.onclick = function () {
+    if (event.target.classList.contains('custom-modal')) {
+      document.getElementById('myModalWidnow').dispatchEvent(new CustomEvent("close-modal"))
+      document.querySelector('.custom-modal').classList.remove('active');
+      if(select) select.destroy()
+      if(select1) select1.destroy()
+    }
+  }
   
   return new Promise(function (resolve, reject) {
     document.getElementById('myModalWidnow').addEventListener('close-modal', function () {
@@ -420,6 +436,76 @@ function Select(element, option = {}) {
   }
 }
 
+window.cardModal = function (info, items) {
+  let modal = document.querySelector('.custom-cardModal')
+  modal.classList.add('active');
+  let select3 = new Select(document.querySelector('#select-3'), {
+    maxHeight: 3,
+    preloader: 'Режим',
+    atribute: 'data-order',
+    absolute: true,
+    items: items,
+  }) 
+  
+  let users = []
+  for(let key in players) {
+    users.push(
+      [players[key].name, players[key].id]
+    )
+  }
+
+  let select4 = new Select(document.querySelector("#select-4"), {
+    maxHeight: 3,
+    preloader: 'Выберете игрока',
+    atribute: 'data-player',
+    items: users,
+  })
+
+  document.getElementById('button-buy').onclick = function () {
+    select3.header.style.borderColor = "#000";
+    select4.header.style.borderColor = "#000";
+    if (!select4.header.getAttribute('data-value')) {
+      select4.header.style.borderColor = "red";
+    } else {
+      players[select4.header.getAttribute('data-value')].removeMoney(info.deposit * 2)
+      modal.classList.remove('active')
+      select3.destroy()
+      select4.destroy()
+    }
+  }
+
+  document.getElementById('button-rent').onclick = function () {
+    select3.header.style.borderColor = "#000";
+    select4.header.style.borderColor = "#000";
+    if(!select3.header.getAttribute('data-value')) {
+      select3.header.style.borderColor = "red";
+    } else if (!select4.header.getAttribute('data-value')) {
+      select4.header.style.borderColor = "red";
+    } else {
+      let rent;
+      let idPlayer = select4.header.getAttribute('data-value');
+      let selectValue = select3.header.getAttribute('data-value');
+      if (!isNaN(selectValue)) {
+        rent = info.home[+selectValue];
+        players[idPlayer].removeMoney(rent)
+      } else {
+        players[idPlayer].removeMoney(selectValue == "x2" ? info.rent * 2 : info.rent)
+      } 
+      modal.classList.remove('active')
+      select3.destroy()
+      select4.destroy()
+   }
+  }
+
+  modal.onclick = function () {
+    if (event.target.classList.contains('custom-cardModal')) {
+      event.target.classList.remove('active')
+      select3.destroy()
+      select4.destroy()
+    }
+  }
+}
+
 
 addButton.addEventListener('click', async function() {
   document.querySelector('.custom-modal__window__input input').value = "";
@@ -442,3 +528,119 @@ addButton.addEventListener('click', async function() {
   
 })
 
+let cards = document.querySelectorAll('.grid__card');
+for (let index = 0; index < cards.length; index++) {
+  const element = cards[index];
+  let arr = []
+  element.addEventListener('click', function () {
+    let card = event.target.closest(".grid__card") ? event.target.closest(".grid__card") : event.target;
+    let info = {
+      rent: +card.querySelector('.order span').innerText.replace("$", ""),
+      home: [],
+      deposit: +card.querySelector('.deposit span').innerText.replace("$", ""),
+    }
+    arr.push(["$" + info.rent, 'normal']);
+    arr.push(["$" + (info.rent*2), 'x2']);
+    for (let index = 0; index < card.querySelectorAll('.home li .right').length; index++) {
+      const element = card.querySelectorAll('.home li .right')[index];
+      info.home.push(+element.innerText.replace('$', ""))
+      arr.push([element.innerText, index])
+    }
+    window.cardModal(info, arr)
+  })
+}
+
+let searcButton = document.querySelectorAll('.search__button button')
+for (let index = 0; index < searcButton.length; index++) {
+  const element = searcButton[index];
+  
+  if (element.classList.contains('all')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        element.classList.remove('disable')
+      }
+    })
+  } else if(element.classList.contains('brown')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('brown')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } else if(element.classList.contains('brown')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('brown')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } else if(element.classList.contains('ligth-blue')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('light-blue')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } else if(element.classList.contains('pink')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('pink')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } else if(element.classList.contains('orange')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('orange')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } else if(element.classList.contains('red')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('red')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } else if(element.classList.contains('yellow')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('yellow')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } else if(element.classList.contains('green')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('green')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } else if(element.classList.contains('dark-blue')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('dark-blue')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } 
+  else if(element.classList.contains('train')) {
+    element.addEventListener('click', function () {
+      for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        (!element.classList.contains('train')) ? element.classList.add('disable') :
+        element.classList.remove('disable');
+      }
+    })
+  } 
+}
